@@ -7,7 +7,11 @@
 }
 
 body {
-    background-color: #70c6c7;
+    background-color: #000;
+    background: url(./img/nebulosa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 .resume-contents {
@@ -21,13 +25,13 @@ body {
 .left-section {
     grid-column: span 2;
     height: 100%;
-    background-color: #00204A;
+    background-color: #0E062B;
 }
 
 .right-section {
     grid-column: span 5;
     height: 100%;
-    background-color: #4B6982;
+    background-color: #393359;
     border-radius: 0px 60px 0px 0px;
 }
 
@@ -36,12 +40,19 @@ body {
 }
 
 .profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
     width: 100%;
     border-bottom: 2px solid #1B2631;
 }
-
-.profile .profile-image {
-    width: 100%;
+.profile img {
+    width: 250px;
+    height: 250px;
+    border: 1px solid white;
+    border-radius: 300px;
+    scale: 0.8;
 }
 
 .name {
@@ -74,10 +85,12 @@ body {
     display: flex;
     align-items: center;
     padding-top: 3rem;
+    margin-left: 20px;
 }
 
 .contact-info ul {
     padding-top: 1.5rem;
+    margin-left: 20px;
 }
 
 .contact-info ul li,
@@ -99,6 +112,7 @@ body {
 
 .skills ul {
     padding-top: 1.5rem;
+    margin-left: 20px;
 }
 .skills ul li p {
     padding: .4rem 0;
@@ -137,11 +151,11 @@ body {
     font-size: 40px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: bold;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     padding: 2rem 0;
     position: relative;
+    margin-left: 20px;
 }
 
 .gap {
@@ -172,6 +186,7 @@ body {
     letter-spacing: 1px;
     color: #FDB44B;
     padding-bottom: .4rem;
+    margin-left: 20px;
 }
 
 .exp-time-period,
@@ -179,7 +194,8 @@ body {
 .awards-time-period {
     font-size: 18px;
     letter-spacing: 1px;
-    line-height: 2rem;
+    line-height: 2rem; 
+    margin-left: 20px;
 }
 
 .exp-position,
@@ -191,6 +207,8 @@ body {
     letter-spacing: 1px;
     color: #FDB44B;
     padding-bottom: .4rem;
+    margin-left: 50px;
+
 }
 
 .exp-desc,
@@ -201,6 +219,7 @@ body {
     line-height: 1.5rem;
     border-left: 3px solid #a5a3a3;
     padding-left: 5px;
+    margin-left: 50px;
 }
 
 /* Media queries */
