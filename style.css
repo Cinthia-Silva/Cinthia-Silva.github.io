@@ -249,7 +249,8 @@ body::after {
 
 .sobre-mim,
 .experiencia,
-.formacao-academica {
+.formacao-academica,
+.certificados {
     color: #8900FF;
 }
 
